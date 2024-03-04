@@ -1,0 +1,33 @@
+.nav-bar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 5rem;
+  background-color: transparent;
+}
+
+.nav-item {
+  width: 10rem;
+  text-align: center;
+  padding: 12px;
+  background: linear-gradient(0deg, hsla(176, 68%, 12%, 1) 0%, hsla(159, 35%, 45%, 1) 100%);
+}
+
+.nav-link {
+     color: #040D12;
+     font-size: 18px;
+     font-weight: 600;
+     padding: 6px;
+     background-color: white;
+}
+
+.nav-link:hover {
+     color: #040D12;
+}
+
+@media only screen and (max-width: 600px) {
+  .nav-item {
+    width: 7rem;
+    text-align: center;
+  }
+}

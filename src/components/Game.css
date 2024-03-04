@@ -1,0 +1,140 @@
+/* Game.css */
+/* #0A1931, #185ADB */
+/* #171738, #2E1760, #3423A6 */
+
+.game-container {
+  margin-top: 4rem;
+}
+
+.button-box {
+  width: 75%;
+  margin: auto;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  border-radius: 26px;
+}
+
+button {
+  width: 10rem;
+  margin: 5px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  box-shadow: none;
+  background: linear-gradient(
+    0deg,
+    hsla(176, 68%, 12%, 1) 0%,
+    hsla(159, 35%, 45%, 1) 100%
+  );
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  color: #65b741;
+  background-color: #c1f2b0;
+  box-shadow: rgba(10, 52, 49, 0.25) 0px 50px 100px -20px inset,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px inset,
+    rgba(74, 155, 127, 0.35) 0px -2px 6px 0px inset;
+}
+
+.label-text {
+  color: #000;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.rock-button {
+  background-image: url(/public/rock.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.paper-button {
+  background-image: url(/public/paper.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.scissors-button {
+  background-image: url(/public/scissor.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.content {
+  width: 50%;
+  margin: 1rem auto;
+  padding: 1rem;
+  border-radius: 26px;
+}
+
+.result-box {
+  border-radius: 16px;
+}
+
+.choices,
+.scores {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 10px;
+}
+
+.player,
+.computer {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  align-items: center;
+  text-align: center;
+
+  color: #000;
+  padding: 1px;
+  margin: 1px;
+  font-size: 16px;
+  font-weight: 600;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.choice {
+  font-size: 36px;
+}
+
+.info {
+  margin: 1rem;
+  color: #fff; /* Text color */
+  font-family: Arial, sans-serif; /* Font family */
+  font-size: 12px; /* Font size */
+  font-weight: bold; /* Font weight */
+  text-align: center; /* Text alignment */
+  text-shadow: 1px 1px 2px #000; /* Text shadow */
+  letter-spacing: 1px; /* Letter spacing */
+}
+
+@media only screen and (max-width: 600px) {
+  .button-box {
+    width: 100%;
+  }
+
+  button {
+    width: 6rem;
+    padding: 5px 10px;
+    font-size: 12px;
+  }
+
+  .content {
+    width: 100%;
+    font-size: 12px; /* Font size */
+  }
+
+  .player,
+  .computer {
+    font-size: 12px;
+  }
+}
